@@ -215,12 +215,194 @@
                             <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
                         </xsl:for-each>
                     </oxyd:rev>
+                    
+                    <!--Rein Medical Attributes START -->
+                    
+                    <oxyd:rm-bauart>
+                        <xsl:for-each select="distinct-values($elements/@rm-bauart/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-bauart>
+                    
                     <oxyd:rm-regulatory>
                         <xsl:for-each select="distinct-values($elements/@rm-regulatory/tokenize(normalize-space(.), ' '))">
                             <xsl:sort select="."/>
                             <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
                         </xsl:for-each>
                     </oxyd:rm-regulatory>
+                    
+                    <oxyd:rm-typ>
+                        <xsl:for-each select="distinct-values($elements/@rm-typ/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-typ>
+                    
+                    <oxyd:rm-feature>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature>
+                    
+                    <oxyd:rm-firma>
+                        <xsl:for-each select="distinct-values($elements/@rm-firma/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-firma>
+                    
+                    <oxyd:rm-bauart-op-integrate>
+                        <xsl:for-each select="distinct-values($elements/@rm-bauart-op-integrate/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-bauart-op-integrate>
+                    
+                    <oxyd:rm-bauart-op-module-typ>
+                        <xsl:for-each select="distinct-values($elements/@rm-bauart-op-module-typ/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-bauart-op-module-typ>
+                    
+                    <oxyd:rm-bauart-op-front-fix>
+                        <xsl:for-each select="distinct-values($elements/@rm-bauart-op-front-fix/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-bauart-op-front-fix>
+                    
+                    <oxyd:rm-bauart-op-install-tray>
+                        <xsl:for-each select="distinct-values($elements/@rm-bauart-op-install-tray/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-bauart-op-install-tray>
+                    
+                    <oxyd:rm-feature-ip>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-ip/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-ip>
+                    
+                    <oxyd:rm-feature-commandbar-typ>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-commandbar-typ/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-commandbar-typ>
+                    
+                    <oxyd:rm-feature-commandbar-button>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-commandbar-button/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-commandbar-button>
+                    
+                    <oxyd:rm-feature-power>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-power/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-power>
+                    
+                    <oxyd:rm-feature-protection>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-protection/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-protection>
+                    
+                    <oxyd:rm-feature-emc-class>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-emc-class/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-emc-class>
+                    
+                    <oxyd:rm-feature-zpa>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-zpa/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-zpa>
+                    
+                    <oxyd:rm-feature-video-port>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-video-port/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-video-port>
+                    
+                    <oxyd:rm-feature-pc-port>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-pc-port/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-pc-port>
+                    
+                    <oxyd:rm-feature-pc>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-pc/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-pc>
+                    
+                    <oxyd:rm-feature-pc-card>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-pc-card/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-pc-card>
+                    
+                    <oxyd:rm-feature-pc-interface>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-pc-interface/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-pc-interface>
+                    
+                    <oxyd:rm-feature-video-controller>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-video-controller/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-video-controller>
+                    
+                    <oxyd:rm-feature-video-controller-feat>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-video-controller-feat/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-video-controller-feat>
+                    
+                    <oxyd:rm-feature-lightbox-typ>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-lightbox-typ/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-lightbox-typ>
+                    
+                    <oxyd:rm-feature-screens>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-screens/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-screens>
+                    
+                    <oxyd:rm-feature-display>
+                        <xsl:for-each select="distinct-values($elements/@rm-feature-display/tokenize(normalize-space(.), ' '))">
+                            <xsl:sort select="."/>
+                            <oxyd:attValue><xsl:value-of select="."/></oxyd:attValue>
+                        </xsl:for-each>
+                    </oxyd:rm-feature-display>
+                    
+                    <!--Rein Medical Attributes ENDE -->
+                    
+                    
                 </oxyd:conditionalAttributes>
                 <oxyd:text>
                     <oxyd:words>

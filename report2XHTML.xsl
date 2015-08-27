@@ -409,10 +409,115 @@ th{padding:4px}
         <h3>rev</h3>
         <xsl:call-template name="showValues"/>
     </xsl:template>
-    <xsl:template match="oxyd:rm-regulatory[*]">
-        <h3>RM-Regulatory</h3>
+    
+    <!--Rein Medical Attributes START-->
+    
+    <xsl:template match="oxyd:rm-bauart[*]">
+        <h3>rm-bauart</h3>
         <xsl:call-template name="showValues"/>
     </xsl:template>
+    <xsl:template match="oxyd:rm-regulatory[*]">
+        <h3>rm-regulatory</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-typ[*]">
+        <h3>rm-typ</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature[*]">
+        <h3>rm-feature</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-firma[*]">
+        <h3>rm-firma</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-bauart-op-integrate-name[*]">
+        <h3>rm-bauart-op-integrate-name</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-bauart-op-module-typ[*]">
+        <h3>rm-bauart-op-module-typ</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-bauart-op-front-fix[*]">
+        <h3>rm-bauart-op-front-fix</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-bauart-op-install-tray[*]">
+        <h3>rm-bauart-op-install-tray</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-ip[*]">
+        <h3>rm-feature-ip</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-commandbar-typ[*]">
+        <h3>rm-feature-commandbar-typ</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-commandbar-button[*]">
+        <h3>rm-feature-commandbar-button</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-power[*]">
+        <h3>rm-feature-power</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-protection[*]">
+        <h3>rm-feature-protection</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-emc-class[*]">
+        <h3>rm-feature-emc-class</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-zpa[*]">
+        <h3>rm-feature-zpa</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-video-port[*]">
+        <h3>rm-feature-video-port</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-pc-port[*]">
+        <h3>rm-feature-pc-port</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-pc[*]">
+        <h3>rm-feature-pc</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-pc-card[*]">
+        <h3>rm-feature-pc-card</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-pc-interface[*]">
+        <h3>rm-feature-pc-interface</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-video-controller[*]">
+        <h3>rm-feature-video-controller</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-video-controller-feat[*]">
+        <h3>rm-feature-video-controller-feat</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-lightbox-typ[*]">
+        <h3>rm-feature-lightbox-typ</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-screens[*]">
+        <h3>rm-feature-screens</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    <xsl:template match="oxyd:rm-feature-display[*]">
+        <h3>rm-feature-display</h3>
+        <xsl:call-template name="showValues"/>
+    </xsl:template>
+    
+        <!--Rein Medical Attributes END-->
 
     <xsl:template match="oxyd:attValue">
         <li><xsl:value-of select="."/></li>
